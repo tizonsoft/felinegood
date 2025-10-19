@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sailboat Feline Good — Coming Soon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #fbf2e0; /* beige */
+      --ink: #142a3a; /* navy */
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+      display: grid;
+      place-items: center;
+      background: var(--bg);
+      color: var(--ink);
+    }
+    .wrap {
+      text-align: center;
+      padding: 4rem 1.25rem;
+    }
+    .logo {
+      max-width: 420px;
+      width: min(80vw, 420px);
+      display: block;
+      margin: 0 auto 1.25rem;
+    }
+    .soon {
+      margin-top: .25rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .15em;
+      font-size: clamp(14px, 2.5vw, 18px);
+    }
+    .credit { margin-top: 1.5rem; font-size: 12px; opacity: .55; }
+  </style>
+</head>
+<body>
+  <main class="wrap" aria-label="Feline Good Coming Soon">
+    <img src="feline-good.png" alt="Feline Good logo: cat on sailboat" class="logo" />
+    <div class="soon" aria-live="polite">coming soon</div>
+    <div class="credit" role="note">New adventure and learning by Virginia &amp; Jose</div>
+  </main>
+</body>
+</html>
